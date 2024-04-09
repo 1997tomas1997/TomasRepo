@@ -25,7 +25,9 @@ public class Examen {
         
         llenar_matriz(a,n);
         llenar_matriz(b,n);
+        System.out.println("matriz a");
         mostrar_matriz(a,n);
+        System.out.println("matriz b");
         mostrar_matriz(b,n);
         
         
@@ -66,7 +68,74 @@ public class Examen {
     }
     
     
+    public static void sumar_matriz(int[][] a, int[][] b, int n){
+        int[][] respuesta= new int[n][n];
+
+        for (int i = 0; i < 3; i++) {
+            
+            
+            for (int j = 0; j < 3; j++) {
+                
+                respuesta[i][j]=a[i][j]+b[i][j];
+                
+            }
+            
+        }
+         System.out.println("la suma entre matrices es");
+         mostrar_matriz( respuesta, n);
+}
     
     
+      public static void restar_matriz(int[][] a, int[][] b, int n){
+          int[][] respuesta= new int[n][n];
+
+        for (int i = 0; i < 3; i++) {
+            
+            
+            for (int j = 0; j < 3; j++) {
+                
+                respuesta[i][j]=a[i][j]-b[i][j];
+                
+            }
+            
+        }
+         System.out.println("la resta entre matrices es");
+         mostrar_matriz( respuesta, n);
+         
+         
+         
+         
+         
+         
+         
+         
+      }
     
+      
+      public static void productoescalar_matriz(int[][] a, int n,int k){
+          int[][] respuesta= new int[n][n];
+
+        for (int i = 0; i < 3; i++) {
+            
+            
+            for (int j = 0; j < 3; j++) {
+                
+                respuesta[i][j]=k*a[i][j];
+                
+            }
+            
+        }
+         System.out.println("la multiplicacion entre matrices es");
+         mostrar_matriz( respuesta, n);
+         
+         
+         
+         
+         
+         
+         
+         
+      }
+      
+      
 }//class
